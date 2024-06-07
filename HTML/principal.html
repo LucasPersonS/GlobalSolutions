@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Future</title>
+</head>
+<body class="fundo-oceano">
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="principal.html">
+                    <img src="IMAGENS/logo-blue-future.png" alt="Logo Futuro Azul">
+                </a>
+            </div>
+            <nav class="menu">
+                <button id="menu-btn" aria-label="Abrir Menu"><i class="fas fa-bars"></i></button>
+                <ul id="menu-list">
+                    <li><a href="principal.html">Home</a></li>
+                    <li><a href="jornal.html">Jornal</a></li>
+                    <li><a href="#doacao">Doação</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="cta">
+                <a href="#doacao" class="btn-cta">Doe Agora</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="meta-atingida" id="metaBanner">
+            <div class="texto-meta">
+                <p><span class="destaque">10M+ PLÁSTICOS RETIRADOS DO OCEANO</span></p>
+                <p class="pequeno-texto">META ATINGIDA</p>
+            </div>
+        </div>
+        <div class="conteudo-cabecalho">
+            <div class="texto-cabecalho">
+                <div id="titulo-futuroazul">
+                    <h1>#BlueFuture</h1>
+                </div>
+                <h2>JUNTE-SE AO MOVIMENTO!</h2>
+                <p>O Oceano está cada vez mais sujo, ajude a BlueFuture. Limpe o Oceano e faça parte do Futuro!</p>
+            </div>
+            <div class="contagem-atual">
+                <h3 id="contagem-plasticos">0</h3>
+                <p class="contagem-sub">Arrecadados</p>
+            </div>
+        </div>
+        <section id="doacao" class="secao-doacao">
+            <h2>Junte-se ao <span class="bluef">#FuturoAzul!</span></h2>
+            <p class="limpa-oceano"><b>Cada R$ 1 = -100g de lixo</b></p>
+            <form id="formulario-doacao">
+                <div class="container-botoes">
+                    <button type="button" class="botao-doacao" onclick="selecionarValor(5)">R$ 5</button>
+                    <button type="button" class="botao-doacao" onclick="selecionarValor(20)">R$ 20</button>
+                    <button type="button" class="botao-doacao" onclick="selecionarValor(50)">R$ 50</button>
+                    <button type="button" class="botao-doacao" onclick="selecionarValor(100)">R$ 100</button>
+                </div>
+                <div class="doacao-customizada">
+                    <input type="number" id="outro-valor" placeholder="Outro valor" min="1">
+                    <div class="linha-cinza"></div>
+                    <button type="button" class="botao-doar" onclick="doar()">Doar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="separador">
+            <button class="botao-separa">
+                <i class="fa fa-fish"></i> 10 MILHÕES+ KG DE LIXO RETIRADOS DO OCEANO <i class="fa fa-arrow-right"></i>
+            </button>
+        </section>
+
+        <section class="tabela-lideres">
+            <h2>LEADERBOARD</h2>
+            <div class="controles-tabela">
+                <button id="botao-pesquisar"><i class="fa fa-search"></i>Pesquisar</button>
+                <button id="botao-mais-recentes">Mais Recentes</button>
+                <button id="botao-mais-plasticos">Maiores Doações</button>
+            </div>
+            <ul id="tabela-lideres">
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Futuro Azul. Todos os direitos reservados.</p>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="fecharPopup()">&times;</span>
+            <h2>Confirme sua doação</h2>
+            <form id="popup-form">
+                <label for="nickname">Nickname:</label>
+                <input type="text" id="nickname" name="nickname" required>
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                <button type="button" id="confirmar-doacao" onclick="confirmarDoacao()">Confirmar</button>
+            </form>
+        </div>
+    </div>
+    <div id="popup-pesquisa" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup-pesquisa">&times;</span>
+            <h2>Pesquisar doador</h2>
+            <input type="text" id="input-pesquisa" placeholder="Digite o nome do doador">
+            <button id="confirmar-pesquisa">Pesquisar</button>
+        </div>
+    </div>
+</body>
+</html>
