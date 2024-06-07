@@ -92,7 +92,7 @@ header {
 }
 
 .btn-cta:hover {
-    background: #207cb2;
+    background: #51abdf;
     color: #fff;
 }
 
@@ -173,7 +173,7 @@ header {
 }
 
 .icones-sociais a {
-    color: #333;
+    color: #161616;
     font-size: 1.5em;
     transition: color 0.3s ease;
 }
@@ -214,7 +214,7 @@ header {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #222222;
     color: white;
     font-size: 0.9em;
     width: 100%;
