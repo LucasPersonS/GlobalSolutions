@@ -796,19 +796,6 @@ footer {
         z-index: 1100;
     }
 
-    .menu ul li a {
-        font-size: 1.2em;
-        z-index: 1100;
-    }
-
-    .header-container {
-        justify-content: space-between;
-    }
-
-    #menu-btn {
-        order: 2;
-    }
-
     .cta {
         order: 3;
     }
@@ -828,8 +815,8 @@ footer {
     }
 
     .btn-cta {
-        padding: 6px 10px;
-        font-size: 0.8em;
+        padding: 6px 50px;
+        font-size: 0.18em;
     }
 
     .texto-cabecalho h1 {
@@ -842,18 +829,6 @@ footer {
 
     .texto-cabecalho p {
         font-size: 0.9em;
-    }
-
-    .meta-atingida img {
-        width: 35%;
-    }
-
-    .texto-meta {
-        font-size: 0.8em;
-    }
-
-    .texto-meta .destaque {
-        font-size: 1em;
     }
 
     .contagem-atual {
